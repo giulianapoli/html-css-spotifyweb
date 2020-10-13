@@ -1,0 +1,59 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.wrapper::after {
+  clear: both;
+  content: '';
+  display: table;
+}
+
+.bar {
+  background-color: black;
+  width: calc(100% - 200px);
+  height: 70px;
+  /* float: right; */
+  position: fixed;
+}
+
+.logo {
+  width: 150px;
+}
+
+.upgrade {
+  float: right;
+}
+
+.wrapper {
+  height: 100vh;
+  width: 100%;
+  position: relative;
+}
+
+.col-sx {
+  position: fixed;
+  background-color: #040404;
+  flex-direction: column;
+  width: 200px;
+  height: 100vh;
+  float: left;
+}
+
+.col-dx {
+  background-color: #282828;
+  width: calc(100% - 200px);
+  height: 100vh;
+  float: right;
+}
+
+/* .list {
+  color: white;
+} */
+
+.player {
+  height: 100px;
+  width: 100vw;
+  background-color: #040404;
+}
