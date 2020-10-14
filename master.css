@@ -60,7 +60,7 @@ main {
   margin-right: 10px;
 }
 
-/* sidebar sx */
+/* SIDEBAR SX */
 
 .col-sx {
   background-color: #040404;
@@ -70,6 +70,8 @@ main {
   float: left;
   color: white;
   position: relative;
+  display: flex;
+  flex-direction: column;
 }
 
 .logo {
@@ -102,7 +104,7 @@ main {
   margin-top: 5px;
 }
 
-/* main col dx */
+/* MAIN col DX */
 .col-dx {
   background-color: #121212;
   width: calc(100% - 200px);
@@ -126,59 +128,29 @@ main {
 }
 
 /* elenco album e contenuti recenti */
-.recents {
+.cover {
   color: white;
   padding: 20px;
 }
 
-.recents ul {
+.cover ul {
   margin-top: 30px;
 }
 
-.recents li {
+.cover li {
   display: inline-block;
   width: 200px;
-  height: 170px;
-  background-color: white;
+  margin-bottom: 10px;
+  margin-left: 10px;
+  text-align: center;
 }
 
-.recents li img {
-
+.cover li img {
+  max-width: 100%;
 }
 
-/* creato per  */
-
-.tips {
-  color: white;
-  padding: 20px;
-}
-
-.tips ul {
-  margin-top: 30px;
-}
-
-.tips li {
-  display: inline-block;
-  width: 200px;
-  height: 170px;
-  background-color: white;
-}
-
-/* popolari */
-.popular {
-  color: white;
-  padding: 20px;
-}
-
-.popular ul {
-  margin-top: 30px;
-}
-
-.popular li {
-  display: inline-block;
-  width: 200px;
-  height: 170px;
-  background-color: white;
+#artists {
+  border-radius: 100%;
 }
 
 /* player */
@@ -198,30 +170,94 @@ footer {
 
 }
 
+@media screen and (min-width: 1024px) {
+/* SIDEBAR sx */
+.logo-s {
+  display: none;
+}
+}
+
 @media screen and (min-width: 768px) and (max-width: 1024px) {
 
+  /* SIDEBAR */
+  .logo-s {
+    display: none;
+  }
+
   /* col dx img */
-  .recents li {
+  .cover li {
     width: 150px;
   }
 }
 
 @media screen and (min-width: 420px) and (max-width: 767px) {
+  /* SIDEBAR */
+  .logo-s {
+    display: none;
+  }
 
   /* col dx img */
   .types {
     font-size: 15px;
   }
 
-  .recents li {
+  .cover li {
     width: 150px;
   }
 
-  .tips li {
-    width: 150px;
+}
+
+@media screen and (max-width: 420px) {
+
+  /* SIDEBAR */
+  .logo-s {
+    display: block;
+    width: 30px;
+    justify-content: center;
   }
 
-  .popular li {
-    width: 150px;
+  .function ul li i {
+    display: ;
+  }
+
+  /* upbar */
+  .bar {
+    width: calc(100% - 50px);
+    height: 80px;
+  }
+
+  .btn {
+    font-size: 10px;
+  }
+
+  /* sidebar SX */
+  .col-sx {
+    width: 50px;
+  }
+
+  .function {
+    display: none;
+  }
+
+  .logo {
+    display: none;
+  }
+
+  .install {
+    display: none;
+  }
+
+  /* main DX */
+  .col-dx {
+    width: calc(100% - 50px);
+  }
+
+  .types li {
+    padding: 10px;
+    font-size: 10px;
+  }
+
+  .cover li {
+    width: 140px;
   }
 }

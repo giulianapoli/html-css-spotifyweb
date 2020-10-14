@@ -2,14 +2,15 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
     <title></title>
     <link rel="stylesheet" href="master.css">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/4b24910fc1.js" crossorigin="anonymous"></script>
   </head>
   <body>
 
     <div class="wrapper">
-      <!-- intestazione spotify barra superiore -->
+      <!-- BARRA INTESTAZIONE SUPERIORE -->
       <header>
         <div class="bar">
           <a class="btn" href="#"> EFFETTUA L'UPGRADE</a>
@@ -17,54 +18,55 @@
       </header>
 
       <main>
-        <!-- colonna fissa sinistra -->
+        <!-- COLONNA SINISTRA -->
         <div class="col-sx">
 
           <!-- logo -->
           <div class="logo">
             <img src="screens-and-img/img/logo.svg" alt="logo">
           </div>
+          <div class="logo-s">
+            <img src="screens-and-img/img/logo-small.svg" alt="">
+          </div>
 
           <!-- lista funzionalità sidebar -->
           <div class="function">
             <ul>
-              <li>Home</li>
-              <li>Cerca</li>
-              <li>La tua libreria</li>
+              <li><i class="fas fa-home"></i> Home</li>
+              <li><i class="fas fa-search"></i> Cerca</li>
+              <li><i class="fas fa-book-open"></i> La tua libreria</li>
             </ul>
 
-          <h5>PLAYLIST</h5>
+            <h5>PLAYLIST</h5>
 
-          <!-- PLAYLIST -->
-          <ul class="playlist">
-            <li>Crea playlist</li>
-            <li>Nome playlist</li>
-            <li>Nome playlist</li>
-            <li>Nome playlist</li>
-            <li>Nome playlist</li>
-            <li>Nome playlist</li>
-            <li>Nome playlist</li>
-            <li>Nome playlist</li>
-          </ul>
+            <ul class="playlist">
+              <li><i class="fas fa-plus-square"></i> Crea playlist</li>
+              <li>Nome playlist</li>
+              <li>Nome playlist</li>
+              <li>Nome playlist</li>
+              <li>Nome playlist</li>
+              <li>Nome playlist</li>
+              <li>Nome playlist</li>
+              <li>Nome playlist</li>
+            </ul>
+          </div>
 
           <!-- footer sidebar -->
           <div class="install">
             <div>
+              <i class="far fa-arrow-alt-circle-down"></i>
               Installa app
             </div>
             <hr>
             <div>
+              <i class="far fa-user"></i>
               Phalaenopsis_
             </div>
 
           </div>
-
         </div>
 
-
-
-        </div>
-        <!-- copertine dischi - album - playlist etc -->
+        <!-- MAIN DESTRA -->
         <div class="col-dx">
           <!-- lista contenuti -->
           <ul class="types">
@@ -77,44 +79,74 @@
           </ul>
 
           <!-- di recente -->
-          <div class="recents">
+          <div class="cover">
             <h2>Recently played</h2>
             <!-- covers -->
             <ul>
               <li>
-                <!-- <img src="screens-and-img/img/metal_lifting.jpg" alt=""> -->
+                <img src="screens-and-img/img/White-Lies-Album-Cover-2018.jpg" alt="">
+                <span>Five V2</span>
               </li>
-              <li></li>
-              <li></li>
-              <li></li>
-              <li></li>
-              <li></li>
+              <li>
+                <img src="screens-and-img/img/WhoMadeWho.jpg" alt="">
+                <span>Trough the Walls</span>
+              </li>
+              <li>
+                <img src="screens-and-img/img/1975.jpg" alt="">
+                <span>1975</span>
+              </li>
+              <li>
+                <img src="screens-and-img/img/radar.jpeg" alt="">
+                <span>Release Radar</span>
+              </li>
+              <li>
+                <img src="screens-and-img/img/j-hopkins.jpg" alt="">
+                <span>Singularity</span>
+              </li>
+              <li>
+                <img src="screens-and-img/img/floating-points-crush.jpg" alt="">
+                <span>Crush</span>
+              </li>
             </ul>
           </div>
 
           <!-- per te -->
-          <div class="tips">
+          <div class="cover">
             <h2>Creato per Phalaenopsis_</h2>
             <!-- covers -->
             <ul>
-              <li></li>
-              <li></li>
+              <li>
+                <img src="screens-and-img/img/daily-mix.webp" alt="" class="">
+                <span class="first-span">Il tuo Daily Mix 1 </span>
+                <span class="second-span"></span>
+              </li>
+              <li>
+                <img src="screens-and-img/img/daily-mix2.png" alt="">
+                <span class="first-span">Il tuo Daily Mix 2 </span>
+              </li>
             </ul>
           </div>
 
           <!-- più quotati -->
-          <div class="popular">
+          <div class="cover">
             <h2>Creato per Phalaenopsis_</h2>
             <!-- covers -->
             <ul>
-              <li></li>
-              <li></li>
+              <li>
+                <img id="artists" src="screens-and-img/img/cosmotronic.jpeg" alt="">
+                <span>Cosmo</span>
+              </li>
+              <li>
+                <img id="artists" src="screens-and-img/img/PK2.jpg" alt="">
+                <span>Paul Kalkbrenner</span>
+              </li>
             </ul>
           </div>
 
         </div>
       </main>
-      <!-- player inferiore -->
+
+      <!-- PLAYER INFERIORE -->
       <footer>
         <div class="player">
 
