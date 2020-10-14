@@ -58,6 +58,7 @@ main {
   width: 200px;
   height: calc(100% - 100px);
   float: left;
+  COLOR: white;
 }
 
 .logo {
@@ -66,7 +67,16 @@ main {
 }
 
 .function {
-  color: white;
+  margin-left: 10px;
+}
+
+.function ul li {
+  list-style: none;
+  margin-top: 15px;
+}
+
+.col-sx h5 {
+  margin-top: 20px;
 }
 
 /* main col dx */
@@ -148,6 +158,7 @@ main {
   background-color: white;
 }
 
+/* player */
 
 footer {
   height: 100px;
