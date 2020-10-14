@@ -36,7 +36,8 @@ main {
 
 /* barra superiore */
 .bar {
-  background-color: green;
+  position: relative;
+  background-color: #121212;
   width: calc(100% - 200px);
   height: 90px;
   position: fixed;
@@ -44,21 +45,31 @@ main {
   right: 0;
   z-index: 1;
   display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
 }
 
 .btn {
-
+  position: absolute;
+  color: white;
+  text-decoration: none;
+  border: 1px solid white;
+  padding: 10px;
+  border-radius: 20px;
+  margin-right: 10px;
 }
 
 /* sidebar sx */
 
 .col-sx {
-  background-color: red;
+  background-color: #040404;
   flex-direction: column;
   width: 200px;
   height: calc(100% - 100px);
   float: left;
-  COLOR: white;
+  color: white;
+  position: relative;
 }
 
 .logo {
@@ -79,9 +90,21 @@ main {
   margin-top: 20px;
 }
 
+.install {
+  width: 90%;
+  margin: auto;
+  position: absolute;
+  bottom: 0;
+}
+
+.install > hr {
+  margin-bottom: 5px;
+  margin-top: 5px;
+}
+
 /* main col dx */
 .col-dx {
-  background-color: #282828;
+  background-color: #121212;
   width: calc(100% - 200px);
   height: calc(100% - 100px);
   padding-top: 90px;
@@ -99,7 +122,7 @@ main {
 .types li {
   display: inline-block;
   color: white;
-  padding: 10px;
+  padding: 15px;
 }
 
 /* elenco album e contenuti recenti */
@@ -163,7 +186,7 @@ main {
 footer {
   height: 100px;
   width: 100vw;
-  background-color: #040404;
+  background-color: #282828;
   position: fixed;
   bottom: 0;
   left: 0;
@@ -186,7 +209,19 @@ footer {
 @media screen and (min-width: 420px) and (max-width: 767px) {
 
   /* col dx img */
+  .types {
+    font-size: 15px;
+  }
+
   .recents li {
+    width: 150px;
+  }
+
+  .tips li {
+    width: 150px;
+  }
+
+  .popular li {
     width: 150px;
   }
 }
