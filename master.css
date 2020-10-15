@@ -17,12 +17,6 @@ body{
   font-family: "CircularSpotifyTxT-Black";
 }
 
-main::after {
-  clear: both;
-  content: '';
-  display: table;
-}
-
 main {
   height: 100%;
 }
@@ -104,6 +98,10 @@ main {
   margin-top: 5px;
 }
 
+.playlist {
+  overflow-y: scroll;
+}
+
 /* MAIN col DX */
 .col-dx {
   background-color: #121212;
@@ -153,6 +151,14 @@ main {
   border-radius: 100%;
 }
 
+.first-span {
+  color: white;
+}
+
+.second-span {
+  color: grey;
+}
+
 /* player */
 
 footer {
@@ -164,10 +170,29 @@ footer {
   left: 0;
   right: 0;
   z-index: 1;
+  display: flex;
 }
 
-.player {
+.block-player {
+  background-color: green;
+  height: 100%;
+  width: calc(100% / 3);
+  border: 1px solid black;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
 
+
+
+[class*="fa-"] {
+  color: white;
+}
+
+.block-player img {
+  width: 50px;
+  height: 50px;
 }
 
 @media screen and (min-width: 1024px) {
@@ -190,7 +215,7 @@ footer {
   }
 }
 
-@media screen and (min-width: 420px) and (max-width: 767px) {
+@media screen and (min-width: 421px) and (max-width: 767px) {
   /* SIDEBAR */
   .logo-s {
     display: none;
