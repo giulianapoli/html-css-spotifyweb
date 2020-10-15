@@ -52,13 +52,13 @@ main {
   padding: 10px;
   border-radius: 20px;
   margin-right: 10px;
+  font-size: 10px;
 }
 
 /* SIDEBAR SX */
 
 .col-sx {
   background-color: #040404;
-  flex-direction: column;
   width: 200px;
   height: calc(100% - 100px);
   float: left;
@@ -75,6 +75,7 @@ main {
 
 .function {
   margin-left: 10px;
+  height: calc(100% - 80px);
 }
 
 .function ul li {
@@ -88,6 +89,7 @@ main {
 
 .install {
   width: 90%;
+  height: 80px;
   margin: auto;
   position: absolute;
   bottom: 0;
@@ -99,7 +101,8 @@ main {
 }
 
 .playlist {
-  overflow-y: scroll;
+  overflow-y: auto;
+  height: 40%;
 }
 
 /* MAIN col DX */
@@ -117,12 +120,13 @@ main {
 .types {
   list-style: none;
   text-align: center;
+  font-size: 10px;
 }
 
 .types li {
   display: inline-block;
   color: white;
-  padding: 15px;
+  padding: 10px;
 }
 
 /* elenco album e contenuti recenti */
@@ -173,26 +177,84 @@ footer {
   display: flex;
 }
 
-.block-player {
+[class*="block_player_"] {
   background-color: green;
   height: 100%;
-  width: calc(100% / 3);
   border: 1px solid black;
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
   align-items: center;
 }
 
-
+.block_player_one {
+  justify-content: space-around;
+  width: 30%;
+}
 
 [class*="fa-"] {
   color: white;
+  margin: 10px;
+  font-size: 15px;
 }
 
-.block-player img {
+.block_player_one img {
   width: 50px;
   height: 50px;
+}
+
+.name .first-span,
+.name .second-span {
+  display: block;
+}
+
+.block_player_two {
+  justify-content: center;
+  width: 40%;
+  position: relative;
+}
+
+.block_player_two .icons {
+  position: absolute;
+  top: 5px;
+  width: 50%;
+  margin: auto;
+}
+
+.block_player_two .first-span {
+  margin-top: 30px;
+  padding: 15px;
+  font-size: 10px;
+}
+
+#play {
+  font-size: 30px;
+}
+
+.time {
+  background-color: grey;
+  height: 5px;
+  width: 60%;
+  border-radius: 5px;
+  margin-top: 30px;
+}
+
+.gone {
+  background-color: white;
+  height: 100%;
+  width: 30%;
+  border-radius: 5px;
+}
+
+.block_player_three {
+  width: 30%;
+}
+
+.volume {
+  display: inline-block;
+  width: 100px;
+  height: 5px;
+  border-radius: 5px;
+  background-color: white;
 }
 
 @media screen and (min-width: 1024px) {
@@ -223,7 +285,7 @@ footer {
 
   /* col dx img */
   .types {
-    font-size: 15px;
+    font-size: 10px;
   }
 
   .cover li {
@@ -236,9 +298,15 @@ footer {
 
   /* SIDEBAR */
   .logo-s {
-    display: block;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     width: 30px;
-    justify-content: center;
+
+  }
+
+  .logo-s img {
+
   }
 
   .function ul li i {
@@ -258,6 +326,8 @@ footer {
   /* sidebar SX */
   .col-sx {
     width: 50px;
+    display: flex;
+    flex-direction: column;
   }
 
   .function {
