@@ -26,11 +26,6 @@ main {
   width: 100%;
   position: relative;
   overflow: hidden;
-
-}
-
-.types a:hover {
-  color: grey;
 }
 
 /* barra superiore */
@@ -74,19 +69,30 @@ main {
 }
 
 .logo {
-  width: 200px;
+  width: 170px;
   padding: 20px;
 }
 
 .function {
   margin-left: 10px;
   height: calc(100% - 174px);
+  font-size: 15px;
   overflow: hidden;
 }
 
 .function ul li {
   list-style: none;
   margin-top: 15px;
+}
+
+.function ul li > a {
+  text-decoration: none;
+  color: rgba(255, 255, 255, .5);
+  transition: 0.3s;
+}
+
+.function li:hover > a {
+   color: white;
 }
 
 .col-sx h5 {
@@ -109,6 +115,16 @@ main {
 .playlist {
   overflow-y: auto;
   height: 40%;
+  font-family: 'Open Sans';
+}
+
+/* FOOTER SIDEBAR */
+.install div:first-child {
+  font-family: 'Open Sans';
+}
+
+.install div:last-child:hover {
+  color: white;
 }
 
 /* MAIN col DX */
@@ -131,8 +147,18 @@ main {
 
 .types li {
   display: inline-block;
-  color: white;
+  color: rgba(255, 255, 255, .5);
   padding: 10px;
+}
+
+.types li a {
+  text-decoration: none;
+  color: lightgrey;
+  transition: 0.3s;
+}
+
+.types li:hover > a {
+   color: white;
 }
 
 .highlighter {
@@ -149,32 +175,71 @@ main {
   padding: 20px;
 }
 
+.cover > a {
+  margin-left: 10px;
+  text-decoration: none;
+  color: white;
+  font-size: 20px;
+}
+
+.cover > a:hover{
+  text-decoration: underline;
+}
+
 .cover ul {
   margin-top: 30px;
 }
 
 .cover li {
   display: inline-block;
-  width: 200px;
+  width: 180px;
+  height: 250px;
   margin-bottom: 10px;
   margin-left: 10px;
   text-align: center;
+  border-radius: 3px;
+  transition: 0.3s;
+  background-color: #181818;
+}
+
+.cover li:hover {
+  background-color: #282828;
+}
+
+.cover ul li > a {
+  display: block;
+  text-decoration: none;
+  color: rgba(255, 255, 255, .5);
+  font-size: 15px;
+}
+
+.cover ul li span > a {
+  text-decoration: none;
+  color: rgba(255, 255, 255, .5);
+}
+
+.cover ul li > span {
+  text-align: left;
+  font-size: 13px;
+  font-family: 'Open Sans';
+  color: rgba(255, 255, 255, .5);
+  font-size: 13px;
+}
+
+.cover ul li > a:hover {
+  color: white;
+  text-decoration: underline;
 }
 
 .cover li img {
-  max-width: 100%;
+  max-width: 85%;
+  margin-top: 15px;
+  border-radius: 2px;
+  margin-bottom: 10px;
 }
 
 #artists {
   border-radius: 100%;
-}
-
-.first-span {
-  color: white;
-}
-
-.second-span {
-  color: grey;
 }
 
 /* player */
@@ -204,9 +269,13 @@ footer {
 }
 
 [class*="fa-"] {
-  color: white;
+  color: rgba(255, 255, 255, .5);
   margin: 10px;
   font-size: 15px;
+}
+
+[class*="fa-"]:hover {
+  color: white;
 }
 
 .block_player_one img {
