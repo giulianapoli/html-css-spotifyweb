@@ -83,7 +83,7 @@
 
           <!-- di recente -->
           <div class="cover">
-            <h3>Recently played</h3>
+            <h3 id="first_title">Recently played</h3>
             <!-- covers -->
             <ul>
               <li>
@@ -121,7 +121,7 @@
 
           <!-- per te -->
           <div class="cover">
-            <h3>Creato per Phalaenopsis_</h3>
+            <h3>Creato per <span id="nickname">Phalaenopsis_</span></h3>
             <!-- covers -->
             <ul>
               <li>
@@ -137,7 +137,7 @@
 
           <!-- più quotati -->
           <div class="cover">
-            <h3>Creato per Phalaenopsis_</h3>
+            <h3 id="last_title">Creato per Phalaenopsis_</h3>
             <!-- covers -->
             <ul>
               <li>
@@ -204,5 +204,20 @@
 
 
     </div>
+
+    <!-- script primo titolo -->
+    <script type="text/javascript">
+      document.getElementById('first_title').innerHTML = "Ascoltati di recente";
+    </script>
+
+    <!-- script nome utente -->
+    <script type="text/javascript">
+      document.getElementById('nickname').innerHTML = "te";
+    </script>
+
+    <!-- script titolo artisti quotati -->
+    <script type="text/javascript">
+      document.getElementById('last_title').innerHTML = "Artisti popolari";
+    </script>
   </body>
 </html>
