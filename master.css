@@ -80,6 +80,15 @@ main {
   overflow: hidden;
 }
 
+.function span {
+  display: block;
+  font-family: 'Open Sans';
+  font-weight: bold;
+  font-size: 12px;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
 .function ul li {
   list-style: none;
   margin-top: 15px;
@@ -95,8 +104,30 @@ main {
    color: white;
 }
 
-.col-sx h5 {
-  margin-top: 20px;
+.playlist {
+  overflow-y: auto;
+  height: 40%;
+  font-family: 'Open Sans';
+  font-size: 13px;
+}
+
+.function .fa-plus-square {
+  font-size: 25px;
+}
+
+#setup > span {
+  font-family: "CircularSpotifyTxT-Black";
+}
+
+#setup > * {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.playlist ul li > a {
+  text-decoration: none;
+  color: rgba(255, 255, 255, .5);
+  transition: 0.3s;
 }
 
 .install {
@@ -112,18 +143,25 @@ main {
   margin-top: 5px;
 }
 
-.playlist {
-  overflow-y: auto;
-  height: 40%;
-  font-family: 'Open Sans';
-}
-
 /* FOOTER SIDEBAR */
-.install div:first-child {
+
+.install div:first-child a {
   font-family: 'Open Sans';
 }
 
-.install div:last-child:hover {
+.install div:first-child a,
+.install div:last-child a {
+  text-decoration: none;
+  transition: 0.3s;
+  color: rgba(255, 255, 255, .5);
+  font-size: 12px;
+}
+
+.install div:first-child a:hover {
+  color: white;
+}
+
+.install div:last-child a:hover {
   color: white;
 }
 
