@@ -26,6 +26,11 @@ main {
   width: 100%;
   position: relative;
   overflow: hidden;
+
+}
+
+.types a:hover {
+  color: grey;
 }
 
 /* barra superiore */
@@ -128,6 +133,14 @@ main {
   display: inline-block;
   color: white;
   padding: 10px;
+}
+
+.highlighter {
+  background-color: #1db954;
+  height: 3px;
+  width: 30px;
+  border-radius: 5px;
+  margin: auto;
 }
 
 /* elenco album e contenuti recenti */
