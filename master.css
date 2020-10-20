@@ -46,13 +46,19 @@ main {
 
 .btn {
   position: absolute;
-  color: white;
+  color: rgba(255, 255, 255, .5);
   text-decoration: none;
-  border: 1px solid white;
+  border: 1px solid rgba(255, 255, 255, .5);
   padding: 10px;
   border-radius: 20px;
   margin-right: 10px;
   font-size: 10px;
+  transition: 0.4s;
+}
+
+.btn:hover {
+  color: white;
+  border-color: white;
 }
 
 /* SIDEBAR SX */
@@ -94,15 +100,17 @@ main {
   margin-top: 15px;
 }
 
-.function ul li > a {
+
+.function ul li a {
   text-decoration: none;
   color: rgba(255, 255, 255, .5);
-  transition: 0.3s;
+  transition: 0.4s;
 }
 
-.function li:hover > a {
-   color: white;
+.lighting_h a:hover {
+  color: white;
 }
+
 
 .playlist {
   overflow-y: auto;
@@ -110,6 +118,10 @@ main {
   font-family: 'Open Sans';
   font-size: 13px;
 }
+
+/* .function [class*='fa-']:hover {
+
+} */
 
 .function .fa-plus-square {
   font-size: 25px;
@@ -128,6 +140,9 @@ main {
   text-decoration: none;
   color: rgba(255, 255, 255, .5);
   transition: 0.3s;
+}
+.playlist li > a:hover {
+  color: white;
 }
 
 .install {
@@ -204,7 +219,7 @@ main {
   height: 3px;
   width: 30px;
   border-radius: 5px;
-  margin: auto;
+  margin: 7px auto;
 }
 
 /* elenco album e contenuti recenti */
@@ -264,6 +279,11 @@ main {
   font-size: 13px;
 }
 
+.cover ul li > a {
+
+  transition: 0.3s;
+}
+
 .cover ul li > a:hover {
   color: white;
   text-decoration: underline;
@@ -310,6 +330,7 @@ footer {
   color: rgba(255, 255, 255, .5);
   margin: 10px;
   font-size: 15px;
+  transition: 0.3s;
 }
 
 [class*="fa-"]:hover {
@@ -325,8 +346,16 @@ footer {
 .name .second-span {
   display: block;
   font-size: 10px;
+  font-family: 'Open Sans';
 }
 
+.name .first-span {
+  color: white;
+}
+
+.name .second-span {
+  color: rgba(255, 255, 255, .5);
+}
 
 .block_player_two {
   display: flex;
@@ -341,7 +370,9 @@ footer {
 
 .block_player_two .first-span {
   padding: 0 15px;
-  font-size: 10px;
+  font-size: 9px;
+  color: rgba(255, 255, 255, .5);
+  font-family: 'Open Sans';
 }
 
 #play {
@@ -357,9 +388,10 @@ footer {
 
 .time {
   background-color: grey;
-  height: 5px;
+  height: 3px;
   width: 60%;
   border-radius: 5px;
+  box-shadow: 0 2px 4px 0 rgba(0,0,0,.5);
 }
 
 .gone {
@@ -367,6 +399,23 @@ footer {
   height: 100%;
   width: 30%;
   border-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.gone:hover {
+  background-color: #1db954;
+}
+
+.dot {
+  float: right;
+  height: 10px;
+  width: 10px;
+  background-color: white;
+  border-radius: 5px;
+  /* visibility: hidden; */
+  box-shadow: 0 2px 4px 0 rgba(0,0,0,.5);
 }
 
 .block_player_three {
@@ -380,15 +429,30 @@ footer {
 .volume {
   display: inline-block;
   width: 100px;
-  height: 5px;
+  height: 3px;
   border-radius: 5px;
-  background-color: white;
+  background-color: rgba(255, 255, 255, .5);
+  box-shadow: 0 2px 4px 0 rgba(0,0,0,.5);
 }
 
 .volume_controls {
   display: inline-block;
   display: flex;
   align-items: center;
+}
+
+.level {
+  background-color: white;
+  width: 70%;
+  height: 3px;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.level:hover {
+  background-color: #1db954;
 }
 
 @media screen and (min-width: 1024px) {
